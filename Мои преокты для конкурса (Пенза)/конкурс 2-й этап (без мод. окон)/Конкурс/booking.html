@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='booking.css'>
+    <title>БРОНИРОВАНИЕ</title>
+</head>
+
+<body>
+    <h2><b>БРОНИРОВАНИЕ</b></h2>
+    <form onsubmit="Registration()">
+        <div>
+            <label for="region">Регион:</label>
+            <input type="text" id="region" name="region" required>
+        </div>
+        <div>
+            <label for="location">Локация:</label>
+            <input type="text" name="location" list="name_location" required>
+                    <datalist id="name_location">
+                        <option value="Частный Дом">
+                        <option value="Новогодний Коттедж">
+                        <option value="Новый Год на дом">
+                        <option value="Ледяной Замок">
+                        <option value="Ледяной Театр">
+                        <option value="Волшебный поезд">
+                        <option value="Новогоднее Представление">
+                    </datalist>
+        </div>
+        <div>
+            <label for="date">Дата мероприятия:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+            <label for="guests">Количество человек:</label>
+            <input type="number" id="guests" name="guests" min="10" required>
+        </div>
+        <div>
+            <label for="cost">Стоимость:</label>
+            <input type="text" id="cost" name="cost" required readonly placeholder=5000₽>
+        </div>
+        <h2>Выбор дополнительных услуг</h2>
+        <div>
+            
+            <label for="animators">Услуги аниматоров</label>
+            <input type="checkbox" id="animators" name="animators">
+            <p>+1550₽</p>            
+        </div>
+        <div>
+            
+            <label for="host">Услуги ведущего</label>
+            <input type="checkbox" id="host" name="host">
+            <p>+1000₽</p>
+        </div>
+        <div>
+            
+            <label for="taxi">Услуги детского такси</label>
+            <input type="checkbox" id="taxi" name="taxi">
+            <p>+300₽</p>
+        </div>
+        <br>
+        <div>
+            <label for="comment">Дополнительный комментарий:</label>
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+        <div>
+            <label for="email">Email заказчика:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="totalCost">Итоговая стоимость:</label>
+            <input type="text" id="totalCost" name="totalCost" placeholder="5000₽" readonly >
+        </div>
+        <input type="submit" value="Оформить бронирование" onclick="Registration()">
+    </form>
+
+    <button onclick="window.location.href='index.html'">На Главную</button>
+
+</body>
+</html>
+
+<script>
+        // Получаем элементы формы
+    var cost = document.getElementById("cost");
+    var animatorsCheckbox = document.getElementById("animators");
+    var hostCheckbox = document.getElementById("host");
+    var taxiCheckbox = document.getElementById("taxi");
+    var totalCost = document.getElementById("totalCost");
+
+    // Устанавливаем начальную итоговую стоимость
+    var initialCost = 5000;
+    totalCost.value = initialCost + "₽";
+
+    // Добавляем обработчики для изменения итоговой стоимости при изменении состояния галочек
+    animatorsCheckbox.addEventListener("change", updateTotalCost);
+    hostCheckbox.addEventListener("change", updateTotalCost);
+    taxiCheckbox.addEventListener("change", updateTotalCost);
+
+    function updateTotalCost() {
+    var additionalCost = 0;
+
+    if (animatorsCheckbox.checked) {
+        additionalCost += 1550;
+    }
+
+    if (hostCheckbox.checked) {
+        additionalCost += 1000;
+    }
+
+    if (taxiCheckbox.checked) {
+        additionalCost += 300;
+    }
+
+    totalCost.value = initialCost + additionalCost + "₽";
+    }
+</script>

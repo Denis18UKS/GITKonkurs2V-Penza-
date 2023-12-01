@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="window.location.href='../index.html'">&times;</span>
+            <h2>ВХОД</h2>
+            <form>
+                <input type="text" placeholder="Введите логин" required>
+                <input type="password" placeholder="Введите пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+        background: url(https://ic.pics.livejournal.com/veta_zh/77047533/363107/363107_original.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #modal{
+        background-color: darkred;
+        padding: 0% 5% 2%; 
+        border: 1em solid whitesmoke;
+        box-shadow: 0px 0px 10px 10px gainsboro;
+        border-radius: 100px;
+    }
+
+    .modal-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-content h2{
+        color: azure;
+        font-size: xxx-large;
+        font-family: cursive;
+        margin-top: 0%;
+    }
+
+    .modal-content form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .modal-content form input{
+        font-size: larger;
+        border-radius: 30px;
+        border: none;
+        padding: 5%;
+    }
+
+    .modal-content form button{
+        background: red;
+        padding: 6% 6%;
+        border-radius: 30px;
+        color: white;
+        font-weight: 900;
+        font-size: large;
+        margin-top: 4%;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+        border: none;
+        box-shadow: inset 0px 0px 10px 5px white;
+        width: 300px;
+    }
+
+    .modal-content form button:hover{
+        color: red;
+        font-size: larger;
+        background: white;
+        transition: all 0.6s ease-in-out;
+        box-shadow: inset 0px 0px 10px 5px red;
+    }
+
+    .close{
+        color: aliceblue;
+        font-size: xx-large;
+        margin-top: 2%;
+        cursor: pointer;
+    }
+
+</style>

@@ -1,0 +1,90 @@
+@media (min-width: 800px)
+    and (max-width: 1080px) {
+        .modal {
+            background-color: darkred;
+            padding: 0% 5% 2%;
+            border: 1em solid whitesmoke;
+            box-shadow: 0px 0px 10px 10px gainsboro;
+            border-radius: 100px;
+            /* width: 15%; */
+            position: fixed;
+            top: -4%;
+            left: 28%;
+            display: none;
+        }
+}
+
+@media (min-width: 1100px) {
+    
+.modal{
+        background-color: darkred;
+        padding: 0% 5% 2%; 
+        border: 1em solid whitesmoke;
+        box-shadow: 0px 0px 10px 10px gainsboro;
+        border-radius: 100px;
+        width: 15%;
+        position: fixed;
+        top: 15%;
+        left: 37%;
+        display: none;
+    }
+
+    .modal-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .modal-content h2{
+        color: azure;
+        font-size: xxx-large;
+        font-family: cursive;
+        margin-top: 0%;
+    }
+
+    .modal-content form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .modal-content form input{
+        font-size: larger;
+        border-radius: 30px;
+        border: none;
+        padding: 5%;
+    }
+
+    .modal-content form button{
+        background: red;
+        padding: 6% 6%;
+        border-radius: 30px;
+        color: white;
+        font-weight: 900;
+        font-size: large;
+        margin-top: 4%;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+        border: none;
+        box-shadow: inset 0px 0px 10px 5px white;
+        width: 300px;
+    }
+
+    .modal-content form button:hover{
+        color: red;
+        font-size: larger;
+        background: white;
+        transition: all 0.6s ease-in-out;
+        box-shadow: inset 0px 0px 10px 5px red;
+    }
+
+    .close{
+        color: aliceblue;
+        font-size: xx-large;
+        margin-top: 2%;
+        cursor: pointer;
+    }
+
+}

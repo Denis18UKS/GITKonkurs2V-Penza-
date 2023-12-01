@@ -1,0 +1,719 @@
+@media (min-width: 800px)
+    and (max-width: 1080px) {
+
+    #loading-gif{
+        position: absolute;
+    }
+
+
+    body{
+        background-color: azure;
+        color: darkred;
+        margin: 0% auto;
+        height: 5200px;
+        width: 100%;
+        font-family: cursive;
+    }
+    
+    nav{
+        background-color: darkred;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 0% 5%;
+        width: 100%;
+        box-shadow: inset -10px -10px 10px 10px white, 0px 1px 10px 10px white;
+        flex-direction: column;
+        font-family: cursive;
+    }
+
+    nav h1{
+        background-color: azure;
+        color: darkred;
+        padding: 20px;
+        border-radius: 120px;
+        
+    }
+    
+    nav ul{
+        display: flex;
+        gap: 55px;
+        font-size: larger;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 5%;
+    }
+    
+    nav ul li {
+        list-style: none;
+    }
+    
+    nav ul li a{
+        color: azure;
+        width: 500px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.6s ease-in-out;
+    
+    }
+    
+    #a:hover{
+        padding: 10% 15% ;
+        border-radius: 15px;
+        color: darkred;
+        background-color: azure;
+        transition: all 0.6s ease-in-out;
+        font-size: x-large;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: darkred;
+        padding: 25%;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        border: 4px solid white;
+    }
+    
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #button-content{
+        display: flex;
+        gap: 20px;
+    }
+    
+    #button-content button{
+        font-size: larger;
+        font-weight: bold;
+        border-radius: 100px;
+        padding: 10px;
+        width: 180px;
+        background: none;
+        color: white;
+        border-color: white;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+    
+    }
+    
+    #button-content button:hover{
+        background-color: white;
+        color: darkred;
+        font-weight: bolder;
+        font-size: medium;
+        transition: all 0.6s ease-in-out;
+    }
+
+        
+
+    
+    .search-button {
+        background-color: #fff;
+        color: darkred;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .search-button:hover{
+        font-size: larger;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    header{
+        background-image: url(https://almode.ru/uploads/posts/2021-12/1639083871_26-almode-ru-p-novii-god-i-ded-moroz-28.jpg);
+        height: 800px;
+        margin: 0% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0px -10px 10px 10px white,
+                    inset 0px 10px 10px 10px white;
+        transition: background-image 0.5s ease-in-out;
+    }
+
+    #text-header-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header section h2{
+        font-size: xxx-large;
+        background-color: azure;
+        color: darkred;
+        padding: 10%;
+        width: 630px;
+        border: 10px solid;
+        border-radius: 90px;
+    }
+    
+    #Bronirovanie h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    #img-card{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #img-bron{
+        width: 500px;
+        margin-top: 10%;
+    }
+    
+    #price-and-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: x-large;
+    }
+    
+    #text-img-content{
+        font-size: larger;
+    }
+    
+    #img-bronirovanie-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    #text-bron-opisanie{
+        margin-top: 5%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: xx-large;
+        background: darkred;
+        color: white;
+    }
+    
+    #text-bron-opisanie h5{
+        font-size: xx-large;
+        font-weight: bold;
+        margin-bottom: 15px;
+        border-bottom: 2px solid;
+    }
+    
+    #text-bron-opisanie ul{
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+    
+    #BRON{
+        background: darkred;
+        padding: 2%;
+        font-size: x-large;
+        border-radius: 27px;
+        font-weight: 700;
+        color: white;
+        border: 3px solid darkred;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        font-family: cursive;
+    }
+    
+    #BRON:hover{
+        color: darkred;
+        background-color: azure;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    .img-card-opis{
+        margin-top: 0;
+    }
+    
+    #Actiii h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    #Pitanie{
+        margin-top: 5%;
+        padding: 2%;
+        color: azure;
+        background-color: darkred;
+    }
+    
+    #Pitanie h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    #img-card h4{
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #text-pitanie{
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    #Uslugi h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    .social-links ul li a{
+        color: white;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    .social-links ul li a:hover{
+        font-size: larger;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    #form-location{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: darkred;
+        padding: 5%;
+    }
+    
+    #form-location form{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    #form-location form input{
+        font-size: x-large;
+        font-family: cursive;
+    }
+    
+    .loc-title{
+        color:#fff;
+        font-size: xxx-large;
+        margin-bottom: 5%;
+    }
+    
+    .search-button-location {
+        background-color: #fff;
+        color: darkred;
+        border: none;
+        font-size: x-large;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        margin-top: 3%;
+        font-family: cursive;
+    }
+    
+    .search-button-location:hover{
+        font-size: xx-large;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    footer{
+        margin-top: 10%;
+        background: darkred;
+        color: white;
+        padding: 2%;
+    }
+    
+    #ftr{
+        display: flex;
+        justify-content: space-between;
+        margin: 0% 5%;
+    }
+    
+    .copyright{
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media (min-width: 1100px) {
+    /* Ваши стили для больших экранов здесь */
+
+    #loading-gif{
+        position: absolute;
+    }
+
+    body{
+        background-color: azure;
+        color: darkred;
+        margin: 0% auto;
+        height: 5200px;
+        width: 100%;
+        font-family: cursive;
+    }
+    
+    nav{
+        background-color: darkred;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 0% 1%;
+        position: fixed;
+        width: 105%;
+        box-shadow: inset -10px -10px 10px 10px white, 0px 1px 10px 10px white;
+        flex-direction: column;
+        font-family: cursive;
+    }
+    
+    
+    nav h1{
+        background-color: azure;
+        color: darkred;
+        font-family: cursive;
+        padding: 20px;
+        border-radius: 120px;
+        
+    }
+    
+    nav ul{
+        display: flex;
+        gap: 55px;
+        font-size: larger;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 5%;
+    }
+    
+    nav ul li {
+        list-style: none;
+    }
+    
+    nav ul li a{
+        color: azure;
+        width: 500px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.6s ease-in-out;
+    
+    }
+    
+    #a:hover{
+        padding: 10% 15% ;
+        border-radius: 15px;
+        color: darkred;
+        background-color: azure;
+        transition: all 0.6s ease-in-out;
+        font-size: x-large;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: darkred;
+        padding: 25%;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        border: 4px solid white;
+    }
+    
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #button-content{
+        display: flex;
+        gap: 20px;
+    }
+    
+    #button-content button{
+        font-size: larger;
+        font-weight: bold;
+        border-radius: 100px;
+        padding: 10px;
+        width: 180px;
+        background: none;
+        color: white;
+        border-color: white;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        font-family: cursive;
+    }
+    
+    #button-content button:hover{
+        background-color: white;
+        color: darkred;
+        font-weight: bolder;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    .search-button {
+        background-color: #fff;
+        color: darkred;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        font-size: larger;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        font-family: cursive;
+    }
+    
+    .search-button:hover{
+        font-size: xx-large;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    header{
+        background-image: url(https://almode.ru/uploads/posts/2021-12/1639083871_26-almode-ru-p-novii-god-i-ded-moroz-28.jpg);
+        height: 800px;
+        margin: 0% auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0px -10px 10px 10px white;
+        transition: background-image 0.5s ease-in-out;
+
+    }
+
+    #text-header-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25%;
+    }
+    
+    header section h2{
+        font-size: xxx-large;
+        background-color: azure;
+        color: darkred;
+        padding: 10%;
+        width: 630px;
+        border: 10px solid;
+        border-radius: 90px;
+    }
+
+
+    
+    #Bronirovanie h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    #img-card{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #img-bron{
+        width: 500px;
+        margin-top: 10%;
+    }
+    
+    #price-and-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: x-large;
+    }
+    
+    #text-img-content{
+        font-size: x-large;
+    }
+    
+    #img-bronirovanie-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #text-bron-opisanie{
+        margin-top: 5%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: xx-large;
+        background: darkred;
+        color: white;
+    }
+    
+    #text-bron-opisanie h5{
+        font-size: xx-large;
+        font-weight: bold;
+        margin-bottom: 15px;
+        border-bottom: 2px solid;
+    }
+    
+    #text-bron-opisanie ul{
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+    
+    #BRON{
+        background: darkred;
+        padding: 2%;
+        font-size: x-large;
+        border-radius: 27px;
+        font-weight: 700;
+        color: white;
+        border: 3px solid darkred;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        font-family: cursive;
+    }
+    
+    #BRON:hover{
+        color: darkred;
+        background-color: azure;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    .img-card-opis{
+        margin-top: 0;
+    }
+    
+    #Actiii h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    #Pitanie{
+        margin-top: 5%;
+        padding: 2%;
+        color: azure;
+        background-color: darkred;
+    }
+    
+    #Pitanie h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    #img-card h4{
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #text-pitanie{
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    #Uslugi h3{
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    .social-links ul li a{
+        color: white;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    .social-links ul li a:hover{
+        font-size: larger;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    #form-location{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: darkred;
+        padding: 5%;
+    }
+    
+    #form-location form{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    #form-location form input{
+        font-size: x-large;
+        font-family: cursive;
+    }
+    
+    .loc-title{
+        color:#fff;
+        font-size: xxx-large;
+        margin-bottom: 5%;
+    }
+    
+    .search-button-location {
+        background-color: #fff;
+        color: darkred;
+        border: none;
+        font-size: x-large;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        margin-top: 3%;
+        font-family: cursive;
+    }
+    
+    .search-button-location:hover{
+        font-size: xx-large;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    footer{
+        margin-top: 10%;
+        background: darkred;
+        color: white;
+        padding: 2%;
+    }
+    
+    #ftr{
+        display: flex;
+        justify-content: space-between;
+        margin: 0% 5%;
+    }
+    
+    .copyright{
+        text-align: center;
+    }
+
+
+}

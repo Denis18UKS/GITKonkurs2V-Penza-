@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='adaptive.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reg-and-signin-form/registration.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reg-and-signin-form/SignIn.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav>
+        <h1><b>Праздник в каждый дом</b></h1>
+        <ul>
+            <li><a href="#" id="a" class="main-nav">Главная</a></li>
+            <li><a href="#Bronirovanie" id="a">Бронирование</a></li>
+            <li><a href="#Actiii" id="a">Акции</a></li>
+            <li class="dropdown">
+                <a href="#" id="a">Услуги</a>
+                <div class="dropdown-content">
+                    <a href="#Uslugi">Услуги аниматоров</a>
+                    <a href="#Uslugi">Услуги ведущего</a>
+                    <a href="#Uslugi">Услуги детского такси</a>
+                </div>
+            </li>
+            <li><a href="#Pitanie" id="a">Питание</a></li>
+            <li><a href="otzivi.html" id="a">Отзывы</a></li>
+            <button class="search-button" onclick="window.location.href='#form-location'">Поиск</button>
+    
+            <div id="button-content">
+                <button onclick="openSignUpModal()">Регистрация</button>
+                <button onclick="openLoginModal()">Войти</button>
+            </div>
+        </ul>
+    </nav>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form>
+                <input type="text" placeholder="Введите имя" required>
+                <input type="email" placeholder="Введите email" required>
+                <input type="tel" placeholder="Введите номер телефона" required>
+                <input type="password" placeholder="Введите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход</h2>
+            <form>
+                <input type="email" placeholder="Введите email" required>
+                <input type="password" placeholder="Введите пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <section>
+            <div id="text-header-content">
+                <h2>Создаём волшебство вместе!</h2>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="Bronirovanie">
+            <h3>БРОНИРОВАНИЕ</h3>
+            <div id="img-bronirovanie-content">
+                <div id="img-card">
+                    <img src="https://pix-feed.com/wp-content/uploads/2018/10/1-61.jpg" alt="" id="img-bron">
+                    <div id="price-and-title">
+                        <h4>Частный Дом</h4>
+                        <p>Цена: 8000₽</p>
+                        <p>от 5-10 людей</p>
+                    </div>
+                    <div id="text-img-content">
+                        <p>Забронируйте частный дом для празднования Нового Года в кругу семьи!</p>
+                    </div>
+                    <button id="BRON" onclick="window.location.href='booking.html'">Забронировать</button>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://almode.ru/uploads/posts/2021-12/1639865032_26-almode-ru-p-novogodnii-dom-31.jpg" alt="" id="img-bron">
+                    <div id="price-and-title">
+                        <h4>Новогодний Коттедж</h4>
+                        <p>Цена: 10000₽</p>
+                        <p>от 25-30 людей</p>
+                    </div>
+                    <div id="text-img-content">
+                        <p>Забронируйте коттедж для празднования Нового Года в кругу семьи!</p>
+                    </div>
+                    <button id="BRON" onclick="window.location.href='booking.html'">Забронировать</button>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://every-holiday.ru/upload/news/files/5dcdd803ce283/5dcdd65fdf58f.jpg" alt="" id="img-bron">
+                    <div id="price-and-title">
+                        <h4>Новый Год на дом!</h4>
+                        <p>Цена: 7500₽</p>
+                    </div>
+                    <div id="text-img-content">
+                        <p>Закажите Новый Год к себе домой!</p>
+                    </div>
+                    <button id="BRON" onclick="window.location.href='booking.html'">Забронировать</button>
+                </div>
+            </div>
+
+            <div id="text-bron-opisanie">
+                <h5>Давно хотели отметить Новый Год всей семьёй, но у вас не хватает места дома? Или нет идей? Не беда! Наша компания спасёт вас!</h5>
+                <p>Предлагаем отличные 3 отличных варианта для празднования Нового Года!</p>
+                <ul>
+                    <li>Частный дом</li>
+                    <li>Коттедж</li>
+                    <li>Новый Год к вам домой!</li>
+                </ul>
+                <p>Так же мы предлагаем воспользоваться нашими следующими услугами:</p>
+                <ul>
+                    <li>Услуги детского такси</li>
+                    <li>Услуги ведущего</li>
+                    <li>Услуги аниматоров</li>
+                </ul>
+                <p class="img-card-opis">Так же вас возможно заинтересуют наши акции представленные ниже</p>
+            </div>
+        </section>
+
+        <section id="Actiii">
+            <h3>АКЦИИ</h3>
+            <div id="img-bronirovanie-content">
+                <div id="img-card">
+                    <img src="https://imagesbase.ru/uploads/posts/2022-12/1672235698_imagesbase.ru.jpg" alt="" id="img-bron">
+                        <h4>Подарки!</h4>
+                    <div id="text-img-content">
+                        <p>При Бронировании частного дома или заказа праздника на дом от 10 человек каждому гостю предоставляется бесплатный Новогодний Подарок от Деда Мороза ЛИЧНО!</p>
+                    </div>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://klike.net/uploads/posts/2022-10/1666679441_3-2.jpg" alt="" id="img-bron">
+                        <h4>ДИСКОТЕКА</h4>
+                    <div id="text-img-content">
+                        <p>При бронировании домов или заказа Нового Года на дом от 15 человек к вам приедет диджей в костюме Дед Мороза!</p>
+                    </div>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://sun9-78.userapi.com/impf/c850224/v850224793/97d8b/1TvEA8Mo6ng.jpg?size=787x412&quality=96&sign=9b427fbac2702c6c0da61ac0d36d6f00&c_uniq_tag=TgE_Jkt09TnbXtmVdF0vnFgqHG2Idamx35eSYgvyqQc&type=album" alt="" id="img-bron">
+                        <h4>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</h4>
+                    <div id="text-img-content">
+                        <p>При Бронировании частного дома или коттеджа от 100 человек заказчику представляется скидка в 50%!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="Pitanie">
+            <h3>ПИТАНИЕ</h3>
+            <div id="img-bronirovanie-content">
+                <div id="img-card">
+                    <img src="https://bye-bye-calories.ru/wp-content/uploads/c/8/7/c877a7f8de67b3340fa22c57bba1403f.jpeg" alt="" id="img-bron">
+                    <h4>Интересные салаты!</h4>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663686720_25-mykaleidoscope-ru-p-novogodnii-stol-s-yedoi-yeda-oboi-37.jpg" alt="" id="img-bron">
+                    <h4>Прикольные десерты!</h4>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://img.povar.ru/main-micro/af/86/6b/34/novogodnii_fruktovii_salat-694701.JPG" alt="" id="img-bron">
+                        <h4>Фруктовые салаты!</h4>
+                </div>
+            </div>
+
+            <div id="text-pitanie">
+                <p>И это ещё не всё! Но боюсь места не хватит! Да и у вас аппетит разыграется!</p>
+                <p>И кстати! Питание уже включено в стоимость бронирования домов или праздника на дом!</p>
+            </div>
+        </section>
+
+        <section id="Uslugi">
+            <h3>УСЛУГИ</h3>
+            <div id="img-bronirovanie-content">
+                <div id="img-card">
+                    <img src="https://raydays-ded-moroz.ru/wp-content/uploads/2022/10/gallery7.jpg" alt="" id="img-bron">
+                    <div id="price-and-title">
+                        <h4>Услуги аниматоров</h4>
+                        <p>+1550₽</p>
+                    </div>
+                    <div id="text-img-content">
+                        <p>Хотите чтобы всем вашим детишкам или внуками было весело? Добавьте услугу аниматоров! Не пожалеете!</p>
+                    </div>
+                    <button id="BRON">Добавить</button>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://leadbook.ru/storage/uploads/images/6437/MpB0KW45bKxqlGFBP0SxeHmA9o3ST3aNdv9Rpjxc.png" alt="" id="img-bron">
+                    <div id="price-and-title">
+                        <h4>Услуги ведущего</h4>
+                        <p>+1000₽</p>
+                    </div>
+                    <div id="text-img-content">
+                        <p>Вы не знаете как вести Новый Год? Не беда! Вас спасёт наш Ведущий! Просто добавьте услугу ведущего в стоимость бронирования или заказа!</p>
+                    </div>
+                    <button id="BRON">Добавить</button>
+                </div>
+
+                <div id="img-card">
+                    <img src="https://taxi-more.ru/wp-content/uploads/2022/12/345678765432.webp" alt="" id="img-bron">
+                    <div id="price-and-title">
+                        <h4>Услуги детского такси</h4>
+                        <p>+300₽</p>
+                    </div>
+                    <div id="text-img-content">
+                        <p>Частный дом или коттедж находятся далеко от вас? Не беда! Выбери услугу детского такси и оно вас доставит мигом до пункта назначения!</p>
+                    </div>
+                    <button id="BRON">Добавить</button>
+                </div>
+        </section>
+
+
+        <section id="form-location">
+            <h1 class="loc-title">Поиск Локаций</h1>
+
+
+            <form action="#" onsubmit="showSnowfall(event)">
+                <input type="text" name="location" list="name_location" placeholder="Выберите локацию" required>
+                    <datalist id="name_location">
+                        <option value="Частный Дом">
+                        <option value="Новогодний Коттедж">
+                        <option value="Новый Год на дом">
+                        <option value="Ледяной Замок">
+                        <option value="Ледяной Театр">
+                        <option value="Волшебный поезд">
+                        <option value="Новогоднее Представление">
+                    </datalist>
+
+                <input type="number" min="1" placeholder="Выберите кол-во людей" required>
+                <input type="date" required>
+                <input type="time" required>
+                <button class="search-button-location" onclick="showSnowfall()" 'window.location.href='#form-location'">Поиск</button>
+
+            </form>
+                            <img id="loading-gif" src="https://kartinkigif.ru/_ph/48/2/603178815.gif" alt="Загрузка..." style="display: none;">
+        </section>
+    </main>
+        
+
+
+    <footer>
+        <section id="ftr">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <ul>
+                        <li><strong>Телефон:</strong> 8-800-123-4567</li>
+                        <li><strong>Email:</strong> info@prazdnikvdom.ru</li>
+                        <li><strong>Адрес:</strong> ул. Новогодняя, 1, г. Рождественск</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="social-links">
+                <h3>Мы в социальных сетях</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </section>
+            
+        <div class="copyright">
+            <p>&copy; 2023 Праздник в Каждый Дом | Все права защищены</p>
+        </div>
+    </footer>
+</body>
+</html>
