@@ -14,6 +14,22 @@
         }
 }
 
+@media (min-width: 100px)
+    and (max-width: 900px) {
+        .modal {
+            background-color: darkred;
+            padding: 0% 5% 2%;
+            border: 1em solid whitesmoke;
+            box-shadow: 0px 0px 10px 10px gainsboro;
+            border-radius: 100px;
+            /* width: 15%; */
+            position: fixed;
+            top: -4%;
+            left: 28%;
+            display: none;
+        }
+}
+
 @media (min-width: 1100px) {
     
 .modal{

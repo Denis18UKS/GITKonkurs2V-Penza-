@@ -356,9 +356,17 @@
 
 }
 
+@media (min-width: 1100px)
+    and (max-width: 1520px) {
+        #img-bronirovanie-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+    }
 
-
-@media (min-width: 1100px) {
+@media (min-width: 1100px){
     /* Ваши стили для больших экранов здесь */
 
     #loading-gif{
@@ -560,6 +568,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
     }
     
     #text-bron-opisanie{
